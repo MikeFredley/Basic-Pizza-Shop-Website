@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0"/>
+    <title>Mike's Pizza</title>
+
+    <script type="text/javascript" src="../js/header.js"></script>
+    <script type="text/javascript" src="../js/calculateOrder.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <div id="headerId"></div>
+    <navbar id="navId"></navbar>
+    <table id="pizzas">
+        <tr>
+            <th>Select Item</th>
+            <th>Amount (Default 1)</th>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Image</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="checkbox1"></td>
+            <td><input type="text" id="textbox1"></td>
+            <td>Small Pepperoni Pizza</td>
+            <td>12.00</td>
+            <td><img src="../img/SmlPepPizza.png" alt="Small Pepperoni Pizza"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="checkbox2"></td>
+            <td><input type="text" id="textbox2"></td>
+            <td>Small Cheese Pizza</td>
+            <td>10.00</td>
+            <td><img src="../img/SmlChzPizza.jpg" alt="Small Cheese Pizza" height="25%"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="checkbox3"></td>
+            <td><input type="text" id="textbox3"></td>
+            <td>Medium Pepperoni Pizza</td>
+            <td>17.00</td>
+            <td><img src="../img/MedPepPizza.jpg" alt="Medium Pepperoni Pizza"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="checkbox4"></td>
+            <td><input type="text" id="textbox4"></td>
+            <td>Medium Cheese Pizza</td>
+            <td>15.00</td>
+            <td><img src="../img/MedChzPizza.png" alt="Medium Cheese Pizza" height="25%"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="checkbox5"></td>
+            <td><input type="text" id="textbox5"></td>
+            <td>Large Pepperoni Pizza</td>
+            <td>22.00</td>
+            <td><img src="../img/LrgPepPizza.png" alt="Large Pepperoni Pizza" height="25%"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="checkbox6"></td>
+            <td><input type="text" id="textbox6"></td>
+            <td>Large Cheese Pizza</td>
+            <td>20.00</td>
+            <td><img src="../img/LrgChzPizza.png" alt="Large Cheese Pizza" height="25%"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="checkbox7"></td>
+            <td><input type="text" id="textbox7"></td>
+            <td>Whole Italian Sub</td>
+            <td>7.00</td>
+            <td><img src="../img/WholeSub.png" alt="12 Inch Italian Sub"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="checkbox8"></td>
+            <td><input type="text" id="textbox8"></td>
+            <td>Half Italian Sub</td>
+            <td>4.50</td>
+            <td><img src="../img/HalfSub.jpeg" alt="6 Inch Italian Sub" height="25%"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="checkbox9"></td>
+            <td><input type="text" id="textbox9"></td>
+            <td>Whole Steak Sub</td>
+            <td>7.00</td>
+            <td> <img src="../img/WholeStkSub.png" alt="12 Inch Steak Sub" height="25%"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="checkbox10"></td>
+            <td><input type="text" id="textbox10"></td>
+            <td>Half Steak Sub</td>
+            <td>4.50</td>
+            <td><img src="../img/HalfStkSub.jpg" alt="6 Inch Steak Sub"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="checkbox11"></td>
+            <td><input type="text" id="textbox11"></td>
+            <td>One Dozen Chicken Wings</td>
+            <td>16.50</td>
+            <td><img src="../img/DozWings.jpg" alt="Chicken Wings" height="35%"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="checkbox12"></td>
+            <td><input type="text" id="textbox12"></td>
+            <td>Half Dozen Chicken Wings</td>
+            <td>9.50</td>
+            <td><img src="../img/HalfDozWings.jpg" alt="Chicken Wings"></td>
+        </tr>
+    </table>
+    <div><button typer="button" id="addCart">Add To Cart</button></div>
+    <p id="total"></p>
+    <div id="footId"></div>
+</body>
+</html>

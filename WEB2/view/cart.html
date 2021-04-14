@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0"/>
+    <title>Mike's Pizza</title>
+    <script type="text/javascript" src="../js/header.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <div id="headerId"></div>
+    <navbar id="navId"></navbar>
+  <!--  <p id="cartItems"></p> -->
+    <h1 id="total"></h1>
+    <form id="orderForm">
+            <h2>Enter Your Name, Phone Number, and Address</h2>
+                <label for="cname">Name <span>(Required, at least 2 characters)</span></label> <br>
+                <input id="cname" name="name" minlength="2" type="text" required/> <br>
+                <label for="phone">Phone Number <span>(Required)</span></label> <br>
+                <input id="phone" name="phone" required/> <br>
+                <label for="address">Address <span>(Required)</span></label> <br>
+                <input id="address" name="address" required/> <br>
+                <input type="submit" id="purchase" value="Submit Purchase">
+    </form>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"></script>
+    <script type="text/javascript" src="../js/additional-methods.js"></script>
+
+   <script>
+        $(document).ready(function(){
+            $("#orderForm").validate({
+                submitHandler: function(){
+                    window.location.href = "home.html";
+                },
+                rules: {
+                    phone: {
+                        required: true,
+                        phoneUS: true
+                    }
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript" src="../js/cart.js" defer></script>
+    <div id="footId"></div>
+</body>
+</html>
